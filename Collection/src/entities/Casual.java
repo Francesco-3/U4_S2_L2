@@ -21,4 +21,16 @@ public class Casual {
         Collections.sort(list);
         return list;
     }
+
+    public static List<Integer> reverseList(List<Integer> list) {
+        List<Integer> rev = new ArrayList<>(list);
+        Collections.reverse(rev);
+        return rev;
+    }
+
+    public static List<Integer> listPlusReverseList(List<Integer> list) {
+        List<Integer> newList = new ArrayList<>(list);
+        newList.addAll(reverseList(list));
+        return newList;
+    }
 }

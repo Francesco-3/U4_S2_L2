@@ -53,6 +53,10 @@ public class Main {
         List<Integer> list = Casual.randomGenerator(n);
         System.out.println("Numeri casuali ordinati: " + list);
 
+        List<Integer> newList = Casual.listPlusReverseList(list);
+        System.out.println("Lista originale + invertita: " + newList);
+
+
         scanner.close();
     }
 }
